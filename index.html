@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services Directory</title>
+    <style type="text/css">.nhsd-widget iframe {
+        height: 430px;
+        width: 350px;
+        
+    }
+    div, h2 
+    {text-align: center;
+    font-family: Arial;
+    color: orangered;
+    margin: 5px;}
+    </style>
+</head>
+<body>
+    <h2>Australian Health Services</h2>
+    <div class="nhsd-widget" id="nhsd-widget">&nbsp;</div>
+        <script>
+
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.apiKey = 'fc8bd6b8c611402d93f73f4a4c89d684';
+                    js.src = 'https://widgets.nhsd.com.au/nhsd/widget/modular/web/widget.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                } (document, 'script', 'nhsd-wjs'));
+            </script>                    
+ 
+</body>
+</html>
